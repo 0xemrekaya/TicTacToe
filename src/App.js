@@ -24,8 +24,6 @@ function App() {
   const[gameOver,setGameOver]= useState(false);
   let [status, setStatus]= useState("-");
 
-
-
   const handleBoxClick =(boxIdx)=> {
     const updatedBoard = board.map((value,index)=>{
       if(index === boxIdx)
