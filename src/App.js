@@ -67,7 +67,6 @@ function App() {
 
   }
 
-
   const checkWinner = (board) => {
     for (let i = 0; i < winnigConditions.length; i++) {
       const [x, y, z] = winnigConditions[i];
@@ -78,16 +77,12 @@ function App() {
     }
   }
   
-
-
-
   const resetBoard = () =>{
     setGameOver(false);
     setBoard(Array(9).fill(null));
     setStatus("-");
   }
   
-
   return (
     <div className="App">
       <h1>Tic Tac Toe</h1>
